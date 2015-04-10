@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Reg</title>
+  </head>
+  <body ng-app="reg">
+    <div ng-controller="RegisterController as section">
+        <input type="text" name="name" ng-model="section.name">
+        <input type="text" name="age" ng-model="section.age">
+        <button ng-click="section.reg()">Register</button>
+    </div>
+  [[webjar 'angular.min.js']]
+  [[webjar 'firebase.js']]
+  [[script 'script/app']]
+  </body>
+</html>
